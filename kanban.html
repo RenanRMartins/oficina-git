@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban - MedConnect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <h1>MedConnect</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="index.html#problema" class="nav-link"><i class="fas fa-info-circle"></i> Problema</a></li>
+                    <li><a href="equipe.html" class="nav-link"><i class="fas fa-users"></i> Equipe</a></li>
+                    <li><a href="backlog.html" class="nav-link"><i class="fas fa-list"></i> Backlogs</a></li>
+                    <li><a href="kanban.html" class="nav-link active"><i class="fas fa-columns"></i> Kanban</a></li>
+                    <li><a href="timeline.html" class="nav-link"><i class="fas fa-calendar"></i> Linha do Tempo</a></li>
+                    <li><a href="review.html" class="nav-link"><i class="fas fa-comments"></i> Review</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Kanban Hero Section -->
+    <section class="kanban-hero">
+        <div class="container">
+            <div class="kanban-hero-content">
+                <h1>Kanban Board</h1>
+                <p>Acompanhe o progresso das tarefas em tempo real</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kanban Board -->
+    <section class="kanban-board-section">
+        <div class="container">
+            <div class="kanban-board">
+                <div class="kanban-column">
+                    <div class="column-header">
+                        <h3>A Fazer</h3>
+                        <span class="task-count">3</span>
+                    </div>
+                    <div class="column-content">
+                        <div class="kanban-card">
+                            <div class="card-header">
+                                <span class="card-id">#PB1-001</span>
+                                <span class="card-priority high">Alta</span>
+                            </div>
+                            <h4>Criar tela de login/cadastro</h4>
+                            <p>Desenvolver interface responsiva para autenticação de usuários</p>
+                            <div class="card-footer">
+                                <div class="card-assignee">
+                                    <i class="fas fa-user"></i>
+                                    <span>Douglas Henrique</span>
+                                </div>
+                                <div class="card-estimate">2d</div>
+                            </div>
+                        </div>
+                        <div class="kanban-card">
+                            <div class="card-header">
+                                <span class="card-id">#PB2-001</span>
+                                <span class="card-priority high">Alta</span>
+                            </div>
+                            <h4>Criar tela de agendamento</h4>
+                            <p>Interface de calendário para seleção de horários</p>
+                            <div class="card-footer">
+                                <div class="card-assignee">
+                                    <i class="fas fa-user"></i>
+                                    <span>Guilherme Cardoso</span>
+                                </div>
+                                <div class="card-estimate">2d</div>
+                            </div>
+                        </div>
+                        <div class="kanban-card">
+                            <div class="card-header">
+                                <span class="card-id">#PB2-003</span>
+                                <span class="card-priority medium">Média</span>
+                            </div>
+                            <h4>Configurar lembretes</h4>
+                            <p>Sistema de notificações automáticas</p>
+                            <div class="card-footer">
+                                <div class="card-assignee">
+                                    <i class="fas fa-user"></i>
+                                    <span>Arthur Alves</span>
+                                </div>
+                                <div class="card-estimate">1d</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanban-column">
+                    <div class="column-header">
+                        <h3>Em Progresso</h3>
+                        <span class="task-count">1</span>
+                    </div>
+                    <div class="column-content">
+                        <div class="kanban-card in-progress">
+                            <div class="card-header">
+                                <span class="card-id">#PB1-002</span>
+                                <span class="card-priority high">Alta</span>
+                            </div>
+                            <h4>Implementar validação de dados</h4>
+                            <p>Backend para autenticação e segurança</p>
+                            <div class="card-footer">
+                                <div class="card-assignee">
+                                    <i class="fas fa-user"></i>
+                                    <span>Arthur Alves</span>
+                                </div>
+                                <div class="card-estimate">3d</div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanban-column">
+                    <div class="column-header">
+                        <h3>Concluído</h3>
+                        <span class="task-count">1</span>
+                    </div>
+                    <div class="column-content">
+                        <div class="kanban-card completed">
+                            <div class="card-header">
+                                <span class="card-id">#PB1-000</span>
+                                <span class="card-priority high">Alta</span>
+                            </div>
+                            <h4>Protótipo da interface de login</h4>
+                            <p>Mockup inicial da tela de autenticação</p>
+                            <div class="card-footer">
+                                <div class="card-assignee">
+                                    <i class="fas fa-user"></i>
+                                    <span>Douglas Henrique</span>
+                                </div>
+                                <div class="card-estimate">1d</div>
+                            </div>
+                            <div class="completion-badge">
+                                <i class="fas fa-check"></i>
+                                <span>Concluído</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sprint Timeline -->
+    <section class="sprint-timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h2>Linha do Tempo da Sprint</h2>
+            </div>
+            <div class="timeline-description">
+                <p>Eventos e marcos importantes da Sprint 1 do projeto MedConnect.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Sprint Planning</h3>
+                        <p>Definição da meta da sprint e seleção do backlog prioritário</p>
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Dia 1 - 9:00</span>
+                            <span class="timeline-duration">2 horas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Daily Scrum</h3>
+                        <p>Reuniões rápidas para alinhar o progresso e identificar impedimentos</p>
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Dias 2-5 - 9:30</span>
+                            <span class="timeline-duration">15 min</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Sprint Review</h3>
+                        <p>Apresentação do incremento funcional do produto e coleta de feedback</p>
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Dia 5 - 14:00</span>
+                            <span class="timeline-duration">1 hora</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-refresh"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Sprint Retrospective</h3>
+                        <p>Análise do processo, pontos fortes e melhorias para a próxima sprint</p>
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Dia 5 - 15:30</span>
+                            <span class="timeline-duration">45 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Activity -->
+    <section class="team-activity-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-activity"></i>
+                </div>
+                <h2>Atividade da Equipe</h2>
+            </div>
+            <div class="activity-grid">
+                <div class="activity-card">
+                    <h3>Produtividade</h3>
+                    <div class="activity-stats">
+                        <div class="stat">
+                            <span class="stat-value">85%</span>
+                            <span class="stat-label">Tarefas Concluídas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">12</span>
+                            <span class="stat-label">Commits Hoje</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <h3>Qualidade</h3>
+                    <div class="activity-stats">
+                        <div class="stat">
+                            <span class="stat-value">0</span>
+                            <span class="stat-label">Bugs Críticos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">95%</span>
+                            <span class="stat-label">Code Coverage</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <h3>Colaboração</h3>
+                    <div class="activity-stats">
+                        <div class="stat">
+                            <span class="stat-value">8</span>
+                            <span class="stat-label">Pull Requests</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">100%</span>
+                            <span class="stat-label">Code Reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3>MedConnect</h3>
+                    </div>
+                    <p>Transformando o futuro da saúde digital</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Projeto</h4>
+                        <ul>
+                            <li><a href="index.html#problema">Problema</a></li>
+                            <li><a href="equipe.html">Equipe</a></li>
+                            <li><a href="backlog.html">Backlogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>SCRUM</h4>
+                        <ul>
+                            <li><a href="kanban.html">Kanban</a></li>
+                            <li><a href="timeline.html">Timeline</a></li>
+                            <li><a href="review.html">Review</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MedConnect. Projeto acadêmico - Faculdade de Tecnologia e Inovação Senac DF</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

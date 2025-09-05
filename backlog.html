@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backlogs - MedConnect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <h1>MedConnect</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="index.html#problema" class="nav-link"><i class="fas fa-info-circle"></i> Problema</a></li>
+                    <li><a href="equipe.html" class="nav-link"><i class="fas fa-users"></i> Equipe</a></li>
+                    <li><a href="backlog.html" class="nav-link active"><i class="fas fa-list"></i> Backlogs</a></li>
+                    <li><a href="kanban.html" class="nav-link"><i class="fas fa-columns"></i> Kanban</a></li>
+                    <li><a href="timeline.html" class="nav-link"><i class="fas fa-calendar"></i> Linha do Tempo</a></li>
+                    <li><a href="review.html" class="nav-link"><i class="fas fa-comments"></i> Review</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Backlog Hero Section -->
+    <section class="backlog-hero">
+        <div class="container">
+            <div class="backlog-hero-content">
+                <h1>Product & Sprint Backlog</h1>
+                <p>Gestão de requisitos e planejamento de desenvolvimento</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Backlog Section -->
+    <section class="product-backlog-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-list"></i>
+                </div>
+                <h2>Product Backlog</h2>
+            </div>
+            <div class="backlog-description">
+                <p>O Product Backlog contém todas as funcionalidades desejadas para o MedConnect, organizadas por prioridade e valor para o usuário.</p>
+            </div>
+            <div class="backlog-table-container">
+                <table class="backlog-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>História de Usuário</th>
+                            <th>Critérios de Aceite</th>
+                            <th>Prioridade</th>
+                            <th>Story Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="priority-must">
+                            <td>PB1</td>
+                            <td>
+                                <strong>Como paciente, quero me cadastrar e fazer login no aplicativo, para ter acesso seguro às funcionalidades.</strong>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Cadastro validado com email e senha</li>
+                                    <li>Login seguro com autenticação</li>
+                                    <li>Recuperação de senha funcional</li>
+                                    <li>Conformidade com LGPD</li>
+                                </ul>
+                            </td>
+                            <td><span class="priority-badge must-have">Must Have</span></td>
+                            <td>8</td>
+                        </tr>
+                        <tr class="priority-must">
+                            <td>PB2</td>
+                            <td>
+                                <strong>Como paciente, quero agendar consultas e receber lembretes automatizados, para não perder compromissos médicos.</strong>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Agendamento com calendário intuitivo</li>
+                                    <li>Lembretes por email e SMS</li>
+                                    <li>Integração com Google Agenda</li>
+                                    <li>Cancelamento e reagendamento</li>
+                                </ul>
+                            </td>
+                            <td><span class="priority-badge must-have">Must Have</span></td>
+                            <td>13</td>
+                        </tr>
+                        <tr class="priority-should">
+                            <td>PB3</td>
+                            <td>
+                                <strong>Como paciente, quero visualizar meu histórico médico digitalizado, para acompanhar melhor minha saúde.</strong>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Visualização de exames e prescrições</li>
+                                    <li>Histórico de consultas anteriores</li>
+                                    <li>Download de documentos</li>
+                                    <li>Busca e filtros</li>
+                                </ul>
+                            </td>
+                            <td><span class="priority-badge should-have">Should Have</span></td>
+                            <td>5</td>
+                        </tr>
+                        <tr class="priority-could">
+                            <td>PB4</td>
+                            <td>
+                                <strong>Como paciente, quero avaliar os profissionais após uma consulta, para ajudar outros usuários a fazerem escolhas mais seguras.</strong>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Sistema de avaliação com estrelas</li>
+                                    <li>Comentários e feedback</li>
+                                    <li>Visualização de avaliações</li>
+                                    <li>Moderação de conteúdo</li>
+                                </ul>
+                            </td>
+                            <td><span class="priority-badge could-have">Could Have</span></td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="priority-should">
+                            <td>PB5</td>
+                            <td>
+                                <strong>Como paciente, quero receber suporte humanizado via chat, para esclarecer dúvidas de forma rápida.</strong>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Chat em tempo real</li>
+                                    <li>Atendimento humanizado</li>
+                                    <li>Histórico de conversas</li>
+                                    <li>Resposta em até 2 horas</li>
+                                </ul>
+                            </td>
+                            <td><span class="priority-badge should-have">Should Have</span></td>
+                            <td>8</td>
+                        </tr>
+                        <tr class="priority-must">
+                            <td>PB6</td>
+                            <td>
+                                <strong>Como profissional de saúde, quero controlar minha disponibilidade e agenda, para organizar melhor meus atendimentos.</strong>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Bloqueio de horários</li>
+                                    <li>Edição de disponibilidade</li>
+                                    <li>Visualização de agenda</li>
+                                    <li>Notificações de agendamentos</li>
+                                </ul>
+                            </td>
+                            <td><span class="priority-badge must-have">Must Have</span></td>
+                            <td>8</td>
+                        </tr>
+                        <tr class="priority-must">
+                            <td>PB7</td>
+                            <td>
+                                <strong>Como paciente e profissional, quero ter garantia de segurança e privacidade dos dados conforme a LGPD, para confiar no uso da plataforma.</strong>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Criptografia de dados</li>
+                                    <li>Conformidade com LGPD</li>
+                                    <li>Auditoria de segurança</li>
+                                    <li>Política de privacidade clara</li>
+                                </ul>
+                            </td>
+                            <td><span class="priority-badge must-have">Must Have</span></td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sprint Backlog Section -->
+    <section class="sprint-backlog-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h2>Sprint Backlog - Sprint 1</h2>
+            </div>
+            <div class="sprint-info">
+                <div class="sprint-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar"></i>
+                        <span><strong>Duração:</strong> 1 semana</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-target"></i>
+                        <span><strong>Objetivo:</strong> MVP com cadastro e agendamento</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span><strong>Histórias Selecionadas:</strong> PB1, PB2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="backlog-table-container">
+                <table class="backlog-table">
+                    <thead>
+                        <tr>
+                            <th>História</th>
+                            <th>Tarefas</th>
+                            <th>Responsável</th>
+                            <th>Status</th>
+                            <th>Estimativa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3" class="story-cell">
+                                <strong>PB1 - Cadastro/Login</strong>
+                                <br>
+                                <small>Como paciente, quero me cadastrar e fazer login no aplicativo</small>
+                            </td>
+                            <td>Criar tela de login e cadastro no protótipo (frontend)</td>
+                            <td>Douglas Henrique</td>
+                            <td><span class="status-badge completed">Concluído</span></td>
+                            <td>2 dias</td>
+                        </tr>
+                        <tr>
+                            <td>Implementar API de autenticação e segurança de dados (backend)</td>
+                            <td>Arthur Alves</td>
+                            <td><span class="status-badge in-progress">Em Progresso</span></td>
+                            <td>3 dias</td>
+                        </tr>
+                        <tr>
+                            <td>Configurar banco de dados seguro para cadastro de usuários</td>
+                            <td>Renan Martins</td>
+                            <td><span class="status-badge pending">Pendente</span></td>
+                            <td>1 dia</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" class="story-cell">
+                                <strong>PB2 - Agendamento</strong>
+                                <br>
+                                <small>Como paciente, quero agendar consultas e receber lembretes</small>
+                            </td>
+                            <td>Criar tela de calendário com consultas agendadas</td>
+                            <td>Guilherme Cardoso</td>
+                            <td><span class="status-badge completed">Concluído</span></td>
+                            <td>2 dias</td>
+                        </tr>
+                        <tr>
+                            <td>Desenvolver integração com Google Agenda</td>
+                            <td>Douglas Henrique</td>
+                            <td><span class="status-badge in-progress">Em Progresso</span></td>
+                            <td>2 dias</td>
+                        </tr>
+                        <tr>
+                            <td>Configurar sistema de envio de lembretes automatizados</td>
+                            <td>Arthur Alves</td>
+                            <td><span class="status-badge pending">Pendente</span></td>
+                            <td>1 dia</td>
+                        </tr>
+                        <tr>
+                            <td>Testar fluxo completo: cadastro → login → agendamento → lembrete</td>
+                            <td>Todos</td>
+                            <td><span class="status-badge pending">Pendente</span></td>
+                            <td>1 dia</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sprint Planning Section -->
+    <section class="sprint-planning-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h2>Sprint Planning</h2>
+            </div>
+            <div class="planning-content">
+                <div class="planning-grid">
+                    <div class="planning-card">
+                        <h3>Objetivo da Sprint</h3>
+                        <p>Desenvolver o MVP (Minimum Viable Product) do MedConnect com funcionalidades essenciais de cadastro, login e agendamento de consultas.</p>
+                    </div>
+                    <div class="planning-card">
+                        <h3>Critérios de Sucesso</h3>
+                        <ul>
+                            <li>Usuário consegue se cadastrar e fazer login</li>
+                            <li>Usuário consegue agendar uma consulta</li>
+                            <li>Sistema envia lembretes automáticos</li>
+                            <li>Interface responsiva e intuitiva</li>
+                        </ul>
+                    </div>
+                    <div class="planning-card">
+                        <h3>Riscos Identificados</h3>
+                        <ul>
+                            <li>Integração com Google Agenda pode ser complexa</li>
+                            <li>Configuração de envio de emails/SMS</li>
+                            <li>Validação de dados e segurança</li>
+                        </ul>
+                    </div>
+                    <div class="planning-card">
+                        <h3>Definição de Pronto</h3>
+                        <ul>
+                            <li>Código revisado e aprovado</li>
+                            <li>Testes unitários passando</li>
+                            <li>Documentação atualizada</li>
+                            <li>Deploy em ambiente de teste</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Burndown Chart Section -->
+    <section class="burndown-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h2>Burndown Chart</h2>
+            </div>
+            <div class="chart-container">
+                <div class="chart-placeholder">
+                    <i class="fas fa-chart-line"></i>
+                    <p>Gráfico de Burndown da Sprint 1</p>
+                    <div class="chart-info">
+                        <div class="chart-item">
+                            <span class="chart-label">Story Points Iniciais:</span>
+                            <span class="chart-value">21</span>
+                        </div>
+                        <div class="chart-item">
+                            <span class="chart-label">Story Points Restantes:</span>
+                            <span class="chart-value">5</span>
+                        </div>
+                        <div class="chart-item">
+                            <span class="chart-label">Progresso:</span>
+                            <span class="chart-value">76%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3>MedConnect</h3>
+                    </div>
+                    <p>Transformando o futuro da saúde digital</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Projeto</h4>
+                        <ul>
+                            <li><a href="index.html#problema">Problema</a></li>
+                            <li><a href="equipe.html">Equipe</a></li>
+                            <li><a href="backlog.html">Backlogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>SCRUM</h4>
+                        <ul>
+                            <li><a href="kanban.html">Kanban</a></li>
+                            <li><a href="timeline.html">Timeline</a></li>
+                            <li><a href="review.html">Review</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MedConnect. Projeto acadêmico - Faculdade de Tecnologia e Inovação Senac DF</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

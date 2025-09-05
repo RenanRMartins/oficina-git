@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint Review & Retrospective - MedConnect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <h1>MedConnect</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="index.html#problema" class="nav-link"><i class="fas fa-info-circle"></i> Problema</a></li>
+                    <li><a href="equipe.html" class="nav-link"><i class="fas fa-users"></i> Equipe</a></li>
+                    <li><a href="backlog.html" class="nav-link"><i class="fas fa-list"></i> Backlogs</a></li>
+                    <li><a href="kanban.html" class="nav-link"><i class="fas fa-columns"></i> Kanban</a></li>
+                    <li><a href="timeline.html" class="nav-link"><i class="fas fa-calendar"></i> Linha do Tempo</a></li>
+                    <li><a href="review.html" class="nav-link active"><i class="fas fa-comments"></i> Review</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Review Hero Section -->
+    <section class="review-hero">
+        <div class="container">
+            <div class="review-hero-content">
+                <h1>Sprint Review & Retrospective</h1>
+                <p>Análise dos resultados e melhorias para próximas sprints</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sprint Review Section -->
+    <section class="sprint-review-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-presentation"></i>
+                </div>
+                <h2>Sprint Review</h2>
+            </div>
+            <div class="review-description">
+                <p>Apresentação do incremento funcional do produto e coleta de feedback dos stakeholders.</p>
+            </div>
+            
+            <!-- Sprint Summary -->
+            <div class="sprint-summary">
+                <h3>Resumo da Sprint 1</h3>
+                <div class="summary-grid">
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h4>Duração</h4>
+                            <p>1 semana</p>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-target"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h4>Objetivo</h4>
+                            <p>MVP com cadastro e agendamento</p>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h4>Histórias Concluídas</h4>
+                            <p>2 de 2 (100%)</p>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h4>Tempo Estimado</h4>
+                            <p>5 dias úteis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Delivered Features -->
+            <div class="delivered-features">
+                <h3>Funcionalidades Entregues</h3>
+                <div class="features-grid">
+                    <div class="feature-delivered">
+                        <div class="feature-header">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <h4>Cadastro e Login</h4>
+                            <span class="status-badge completed">Concluído</span>
+                        </div>
+                        <div class="feature-details">
+                            <ul>
+                                <li>✅ Tela de cadastro responsiva</li>
+                                <li>✅ Validação de dados em tempo real</li>
+                                <li>✅ Sistema de autenticação seguro</li>
+                                <li>✅ Recuperação de senha</li>
+                                <li>✅ Conformidade com LGPD</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feature-delivered">
+                        <div class="feature-header">
+                            <div class="feature-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h4>Agendamento de Consultas</h4>
+                            <span class="status-badge completed">Concluído</span>
+                        </div>
+                        <div class="feature-details">
+                            <ul>
+                                <li>✅ Interface de calendário intuitiva</li>
+                                <li>✅ Seleção de horários disponíveis</li>
+                                <li>✅ Integração com Google Agenda</li>
+                                <li>✅ Sistema de lembretes automáticos</li>
+                                <li>✅ Cancelamento e reagendamento</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stakeholder Feedback -->
+            <div class="stakeholder-feedback">
+                <h3>Feedback dos Stakeholders</h3>
+                <div class="feedback-grid">
+                    <div class="feedback-card positive">
+                        <div class="feedback-header">
+                            <i class="fas fa-thumbs-up"></i>
+                            <h4>Pontos Positivos</h4>
+                        </div>
+                        <ul>
+                            <li>Interface limpa e intuitiva</li>
+                            <li>Processo de cadastro simples e rápido</li>
+                            <li>Lembretes automáticos muito úteis</li>
+                            <li>Integração com Google Agenda excelente</li>
+                            <li>Design responsivo funciona bem em mobile</li>
+                        </ul>
+                    </div>
+                    <div class="feedback-card improvement">
+                        <div class="feedback-header">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Sugestões de Melhoria</h4>
+                        </div>
+                        <ul>
+                            <li>Adicionar opção de cadastro via redes sociais</li>
+                            <li>Personalizar horários e frequência dos lembretes</li>
+                            <li>Incluir histórico médico na próxima sprint</li>
+                            <li>Melhorar sistema de busca de profissionais</li>
+                            <li>Adicionar chat de suporte</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demo Results -->
+            <div class="demo-results">
+                <h3>Resultados da Demonstração</h3>
+                <div class="demo-stats">
+                    <div class="demo-stat">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Satisfação dos Usuários</div>
+                    </div>
+                    <div class="demo-stat">
+                        <div class="stat-number">2min</div>
+                        <div class="stat-label">Tempo Médio de Cadastro</div>
+                    </div>
+                    <div class="demo-stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Funcionalidades Testadas</div>
+                    </div>
+                    <div class="demo-stat">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Bugs Críticos Encontrados</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sprint Retrospective Section -->
+    <section class="sprint-retrospective-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h2>Sprint Retrospective</h2>
+            </div>
+            <div class="retro-description">
+                <p>Análise do processo, identificação de pontos fortes e oportunidades de melhoria para a próxima sprint.</p>
+            </div>
+
+            <!-- Retrospective Analysis -->
+            <div class="retro-analysis">
+                <div class="retro-grid">
+                    <div class="retro-card start">
+                        <div class="retro-header">
+                            <i class="fas fa-play"></i>
+                            <h3>Start Doing</h3>
+                        </div>
+                        <ul>
+                            <li>Implementar testes automatizados desde o início</li>
+                            <li>Code review obrigatório para todas as PRs</li>
+                            <li>Documentação técnica mais detalhada</li>
+                            <li>Reuniões de alinhamento mais frequentes</li>
+                            <li>Métricas de performance do sistema</li>
+                        </ul>
+                    </div>
+                    <div class="retro-card stop">
+                        <div class="retro-header">
+                            <i class="fas fa-stop"></i>
+                            <h3>Stop Doing</h3>
+                        </div>
+                        <ul>
+                            <li>Deixar testes para o final da sprint</li>
+                            <li>Desenvolvimento sem validação contínua</li>
+                            <li>Comunicação apenas via chat</li>
+                            <li>Deploy sem validação prévia</li>
+                            <li>Ignorar feedback dos usuários</li>
+                        </ul>
+                    </div>
+                    <div class="retro-card continue">
+                        <div class="retro-header">
+                            <i class="fas fa-arrow-right"></i>
+                            <h3>Continue Doing</h3>
+                        </div>
+                        <ul>
+                            <li>Daily standups diários</li>
+                            <li>Comunicação transparente na equipe</li>
+                            <li>Foco na qualidade do código</li>
+                            <li>Feedback constante com stakeholders</li>
+                            <li>Metodologia SCRUM bem aplicada</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Performance -->
+            <div class="team-performance">
+                <h3>Performance da Equipe</h3>
+                <div class="performance-grid">
+                    <div class="performance-card">
+                        <h4>Velocidade da Sprint</h4>
+                        <div class="performance-value">
+                            <span class="value">21</span>
+                            <span class="unit">Story Points</span>
+                        </div>
+                        <p>Meta: 20 Story Points</p>
+                    </div>
+                    <div class="performance-card">
+                        <h4>Taxa de Conclusão</h4>
+                        <div class="performance-value">
+                            <span class="value">100%</span>
+                        </div>
+                        <p>Todas as histórias foram concluídas</p>
+                    </div>
+                    <div class="performance-card">
+                        <h4>Qualidade do Código</h4>
+                        <div class="performance-value">
+                            <span class="value">9.2</span>
+                            <span class="unit">/10</span>
+                        </div>
+                        <p>Baseado em code review</p>
+                    </div>
+                    <div class="performance-card">
+                        <h4>Satisfação da Equipe</h4>
+                        <div class="performance-value">
+                            <span class="value">8.5</span>
+                            <span class="unit">/10</span>
+                        </div>
+                        <p>Pesquisa interna da equipe</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Items -->
+            <div class="action-items">
+                <h3>Itens de Ação para Próxima Sprint</h3>
+                <div class="action-grid">
+                    <div class="action-card high">
+                        <div class="action-priority">Alta Prioridade</div>
+                        <h4>Implementar Testes Automatizados</h4>
+                        <p>Configurar pipeline de CI/CD com testes unitários e de integração</p>
+                        <div class="action-responsible">Responsável: Renan Martins</div>
+                    </div>
+                    <div class="action-card medium">
+                        <div class="action-priority">Média Prioridade</div>
+                        <h4>Melhorar Documentação</h4>
+                        <p>Criar documentação técnica detalhada e guias de contribuição</p>
+                        <div class="action-responsible">Responsável: Douglas Henrique</div>
+                    </div>
+                    <div class="action-card low">
+                        <div class="action-priority">Baixa Prioridade</div>
+                        <h4>Otimizar Performance</h4>
+                        <p>Implementar lazy loading e otimizações de performance</p>
+                        <div class="action-responsible">Responsável: Arthur Alves</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Next Sprint Preview -->
+            <div class="next-sprint-preview">
+                <h3>Próxima Sprint - Preview</h3>
+                <div class="next-sprint-content">
+                    <div class="sprint-goals">
+                        <h4>Objetivos da Sprint 2</h4>
+                        <ul>
+                            <li>Implementar histórico médico digitalizado</li>
+                            <li>Desenvolver sistema de avaliações</li>
+                            <li>Adicionar chat de suporte</li>
+                            <li>Melhorar sistema de busca</li>
+                        </ul>
+                    </div>
+                    <div class="sprint-estimates">
+                        <h4>Estimativas</h4>
+                        <div class="estimate-item">
+                            <span>Histórico Médico:</span>
+                            <span>5 Story Points</span>
+                        </div>
+                        <div class="estimate-item">
+                            <span>Sistema de Avaliações:</span>
+                            <span>3 Story Points</span>
+                        </div>
+                        <div class="estimate-item">
+                            <span>Chat de Suporte:</span>
+                            <span>8 Story Points</span>
+                        </div>
+                        <div class="estimate-item">
+                            <span>Melhorias de Busca:</span>
+                            <span>3 Story Points</span>
+                        </div>
+                        <div class="estimate-total">
+                            <strong>Total: 19 Story Points</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3>MedConnect</h3>
+                    </div>
+                    <p>Transformando o futuro da saúde digital</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Projeto</h4>
+                        <ul>
+                            <li><a href="index.html#problema">Problema</a></li>
+                            <li><a href="equipe.html">Equipe</a></li>
+                            <li><a href="backlog.html">Backlogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>SCRUM</h4>
+                        <ul>
+                            <li><a href="kanban.html">Kanban</a></li>
+                            <li><a href="timeline.html">Timeline</a></li>
+                            <li><a href="review.html">Review</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MedConnect. Projeto acadêmico - Faculdade de Tecnologia e Inovação Senac DF</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

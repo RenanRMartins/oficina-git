@@ -1,14 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MedConnect - Sistema de Agendamento Médico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Faculdade de Tecnologia e Inovação Senac DF</h1>
-    <h2>Oficina: Primeiros Passos com Git e Github</h2>
-    <h3>Jornada Interdisciplinar - 6 de novembro de 2024</h3>
-    <p>Ir para <a href="pagina2.html">página 2</a><p>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <h1>MedConnect</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#problema" class="nav-link"><i class="fas fa-info-circle"></i> Problema</a></li>
+                    <li><a href="equipe.html" class="nav-link"><i class="fas fa-users"></i> Equipe</a></li>
+                    <li><a href="backlog.html" class="nav-link"><i class="fas fa-list"></i> Backlogs</a></li>
+                    <li><a href="kanban.html" class="nav-link"><i class="fas fa-columns"></i> Kanban</a></li>
+                    <li><a href="timeline.html" class="nav-link"><i class="fas fa-calendar"></i> Linha do Tempo</a></li>
+                    <li><a href="review.html" class="nav-link"><i class="fas fa-comments"></i> Review</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Transformando o Agendamento de Consultas Médicas</h2>
+                <p>Uma solução prática, segura e humanizada para conectar pacientes e profissionais de saúde</p>
+                <div class="hero-buttons">
+                    <a href="#problema" class="btn btn-primary">Conhecer o Projeto</a>
+                    <a href="equipe.html" class="btn btn-secondary">Ver Equipe</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-interface">
+                            <div class="app-header">
+                                <i class="fas fa-calendar-check"></i>
+                                <span>Agendamentos</span>
+                            </div>
+                            <div class="app-content">
+                                <div class="appointment-card">
+                                    <div class="doctor-info">
+                                        <div class="avatar">DR</div>
+                                        <div class="info">
+                                            <h4>Dr. João Silva</h4>
+                                            <p>Cardiologista</p>
+                                        </div>
+                                    </div>
+                                    <div class="appointment-time">
+                                        <i class="fas fa-clock"></i>
+                                        <span>15:30 - 16:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Description Section -->
+    <section id="problema" class="problem-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h2>A Descrição do Problema</h2>
+            </div>
+            <div class="problem-content">
+                <div class="problem-text">
+                    <p>O MedConnect é um aplicativo móvel e um site que busca transformar o agendamento de consultas médicas e a comunicação entre pacientes e profissionais. Hoje, muitos aplicativos apresentam interfaces pouco intuitivas, falhas na organização e falta de suporte humanizado. O MedConnect resolve isso com uma solução prática, segura e humanizada.</p>
+                </div>
+                <div class="problem-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">Dos usuários enfrentam dificuldades</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-number">40%</div>
+                        <div class="stat-label">Perdem consultas por falta de lembretes</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Conformidade com LGPD</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2>Principais Funcionalidades</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Cadastro Seguro</h3>
+                    <p>Autenticação robusta com validação de dados e conformidade com LGPD</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Agendamento Inteligente</h3>
+                    <p>Sistema de agendamento intuitivo com integração ao Google Agenda</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Lembretes Automatizados</h3>
+                    <p>Notificações personalizáveis para nunca perder uma consulta</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3>Histórico Digital</h3>
+                    <p>Acesso completo ao histórico médico digitalizado</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Avaliações</h3>
+                    <p>Sistema de avaliação de profissionais para melhor escolha</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Suporte Humanizado</h3>
+                    <p>Chat de suporte com atendimento personalizado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Preview Section -->
+    <section class="team-preview">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h2>Nossa Equipe</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Marcela Borges</h3>
+                    <p>Product Owner</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Pedro Stucki</h3>
+                    <p>Scrum Master</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Renan Martins</h3>
+                    <p>Tech Lead</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Douglas Henrique</h3>
+                    <p>Desenvolvedor</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Arthur Alves</h3>
+                    <p>Desenvolvedor</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Guilherme Cardoso</h3>
+                    <p>Desenvolvedor</p>
+                </div>
+            </div>
+            <div class="team-cta">
+                <a href="equipe.html" class="btn btn-primary">Ver Equipe Completa</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3>MedConnect</h3>
+                    </div>
+                    <p>Transformando o futuro da saúde digital</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Projeto</h4>
+                        <ul>
+                            <li><a href="#problema">Problema</a></li>
+                            <li><a href="equipe.html">Equipe</a></li>
+                            <li><a href="backlog.html">Backlogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>SCRUM</h4>
+                        <ul>
+                            <li><a href="kanban.html">Kanban</a></li>
+                            <li><a href="timeline.html">Timeline</a></li>
+                            <li><a href="review.html">Review</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MedConnect. Projeto acadêmico - Faculdade de Tecnologia e Inovação Senac DF</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

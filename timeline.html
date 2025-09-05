@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline - MedConnect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <h1>MedConnect</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="index.html#problema" class="nav-link"><i class="fas fa-info-circle"></i> Problema</a></li>
+                    <li><a href="equipe.html" class="nav-link"><i class="fas fa-users"></i> Equipe</a></li>
+                    <li><a href="backlog.html" class="nav-link"><i class="fas fa-list"></i> Backlogs</a></li>
+                    <li><a href="kanban.html" class="nav-link"><i class="fas fa-columns"></i> Kanban</a></li>
+                    <li><a href="timeline.html" class="nav-link active"><i class="fas fa-calendar"></i> Linha do Tempo</a></li>
+                    <li><a href="review.html" class="nav-link"><i class="fas fa-comments"></i> Review</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Timeline Hero Section -->
+    <section class="timeline-hero">
+        <div class="container">
+            <div class="timeline-hero-content">
+                <h1>Linha do Tempo do Projeto</h1>
+                <p>Cronologia completa do desenvolvimento do MedConnect</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Timeline -->
+    <section class="project-timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-timeline"></i>
+                </div>
+                <h2>Cronologia do Projeto</h2>
+            </div>
+            <div class="timeline-description">
+                <p>Acompanhe a evolução do projeto MedConnect desde sua concepção até a entrega final.</p>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="timeline-item completed">
+                    <div class="timeline-marker">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Semana 1</div>
+                        <h3>Concepção do Projeto</h3>
+                        <p>Definição do problema, criação da visão do produto e formação da equipe SCRUM.</p>
+                        <div class="timeline-details">
+                            <ul>
+                                <li>Análise do mercado de agendamento médico</li>
+                                <li>Definição de personas e casos de uso</li>
+                                <li>Formação da equipe e definição de papéis</li>
+                                <li>Criação do Product Backlog inicial</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item completed">
+                    <div class="timeline-marker">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Semana 2</div>
+                        <h3>Sprint Planning 1</h3>
+                        <p>Planejamento da primeira sprint com foco no MVP (Minimum Viable Product).</p>
+                        <div class="timeline-details">
+                            <ul>
+                                <li>Seleção de histórias prioritárias (PB1, PB2)</li>
+                                <li>Estimativa de story points</li>
+                                <li>Definição de critérios de aceite</li>
+                                <li>Planejamento de tarefas técnicas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item in-progress">
+                    <div class="timeline-marker">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Semana 3</div>
+                        <h3>Desenvolvimento Sprint 1</h3>
+                        <p>Implementação das funcionalidades de cadastro e agendamento.</p>
+                        <div class="timeline-details">
+                            <ul>
+                                <li>Desenvolvimento da interface de login/cadastro</li>
+                                <li>Implementação da API de autenticação</li>
+                                <li>Criação da tela de agendamento</li>
+                                <li>Configuração do sistema de lembretes</li>
+                                <li>Testes e validação das funcionalidades</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item upcoming">
+                    <div class="timeline-marker">
+                        <i class="fas fa-presentation"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Semana 4</div>
+                        <h3>Sprint Review & Retrospective</h3>
+                        <p>Apresentação dos resultados e análise do processo para melhorias.</p>
+                        <div class="timeline-details">
+                            <ul>
+                                <li>Demonstração das funcionalidades desenvolvidas</li>
+                                <li>Coleta de feedback dos stakeholders</li>
+                                <li>Análise de performance da equipe</li>
+                                <li>Identificação de melhorias para próxima sprint</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item upcoming">
+                    <div class="timeline-marker">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Semana 5</div>
+                        <h3>Sprint 2 - Expansão</h3>
+                        <p>Desenvolvimento de funcionalidades adicionais baseadas no feedback.</p>
+                        <div class="timeline-details">
+                            <ul>
+                                <li>Implementação do histórico médico</li>
+                                <li>Sistema de avaliações de profissionais</li>
+                                <li>Chat de suporte humanizado</li>
+                                <li>Melhorias na interface e UX</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item upcoming">
+                    <div class="timeline-marker">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Semana 6</div>
+                        <h3>Entrega Final</h3>
+                        <p>Finalização do projeto e documentação completa.</p>
+                        <div class="timeline-details">
+                            <ul>
+                                <li>Testes finais e correção de bugs</li>
+                                <li>Documentação técnica completa</li>
+                                <li>Deploy em produção</li>
+                                <li>Apresentação final do projeto</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sprint Details -->
+    <section class="sprint-details-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h2>Detalhes das Sprints</h2>
+            </div>
+            <div class="sprints-grid">
+                <div class="sprint-card current">
+                    <div class="sprint-header">
+                        <h3>Sprint 1</h3>
+                        <span class="sprint-status current">Em Andamento</span>
+                    </div>
+                    <div class="sprint-info">
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Duração: 1 semana</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-target"></i>
+                            <span>Objetivo: MVP com cadastro e agendamento</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Story Points: 21</span>
+                        </div>
+                    </div>
+                    <div class="sprint-progress">
+                        <div class="progress-label">Progresso</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                        <div class="progress-text">75% Concluído</div>
+                    </div>
+                </div>
+
+                <div class="sprint-card upcoming">
+                    <div class="sprint-header">
+                        <h3>Sprint 2</h3>
+                        <span class="sprint-status upcoming">Planejada</span>
+                    </div>
+                    <div class="sprint-info">
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Duração: 1 semana</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-target"></i>
+                            <span>Objetivo: Histórico médico e avaliações</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Story Points: 19</span>
+                        </div>
+                    </div>
+                    <div class="sprint-progress">
+                        <div class="progress-label">Progresso</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <div class="progress-text">0% Concluído</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milestones -->
+    <section class="milestones-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-flag-checkered"></i>
+                </div>
+                <h2>Marcos do Projeto</h2>
+            </div>
+            <div class="milestones-grid">
+                <div class="milestone-card completed">
+                    <div class="milestone-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h3>Kickoff do Projeto</h3>
+                    <p>Início oficial do desenvolvimento</p>
+                    <div class="milestone-date">Concluído</div>
+                </div>
+                <div class="milestone-card completed">
+                    <div class="milestone-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h3>Product Backlog</h3>
+                    <p>Definição completa dos requisitos</p>
+                    <div class="milestone-date">Concluído</div>
+                </div>
+                <div class="milestone-card in-progress">
+                    <div class="milestone-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>MVP Development</h3>
+                    <p>Desenvolvimento do produto mínimo viável</p>
+                    <div class="milestone-date">Em Andamento</div>
+                </div>
+                <div class="milestone-card upcoming">
+                    <div class="milestone-icon">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <h3>Beta Testing</h3>
+                    <p>Testes com usuários reais</p>
+                    <div class="milestone-date">Planejado</div>
+                </div>
+                <div class="milestone-card upcoming">
+                    <div class="milestone-icon">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <h3>Launch</h3>
+                    <p>Lançamento oficial do produto</p>
+                    <div class="milestone-date">Planejado</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3>MedConnect</h3>
+                    </div>
+                    <p>Transformando o futuro da saúde digital</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Projeto</h4>
+                        <ul>
+                            <li><a href="index.html#problema">Problema</a></li>
+                            <li><a href="equipe.html">Equipe</a></li>
+                            <li><a href="backlog.html">Backlogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>SCRUM</h4>
+                        <ul>
+                            <li><a href="kanban.html">Kanban</a></li>
+                            <li><a href="timeline.html">Timeline</a></li>
+                            <li><a href="review.html">Review</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MedConnect. Projeto acadêmico - Faculdade de Tecnologia e Inovação Senac DF</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
